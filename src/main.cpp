@@ -1,25 +1,50 @@
+#include "classebase.h"
+#include "resistor.h"
+#include "componentes/Capacitor.h"
+#include "Potencia.h"
 #include <iostream>
+#include <string>
+#include <fstream>
+#include <locale>
+using namespace std;
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// Função principal
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    setlocale(LC_ALL, "PORTUGUESE");
+    Resistor r1;
+    Capacitor c1;
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    int opcao;
+    while (true) {
+        cout << "CALCULADORA ELÉTRICA BÁSICA" << endl;
+        cout << "1. Calcular resistência" << endl;
+        cout << "2. Últimas resistências" << endl;
+        cout << "3. Calcular capacitância" << endl;
+        cout << "4. Últimas capacitâncias" << endl;
+        cout << "7. Sair" << endl;
+        cin >> opcao;
+
+        if (opcao == 7) break;
+
+        try {
+            switch (opcao) {
+                case 1:
+                    r1.receberFaixas();
+                    r1.mostrarResistencia();
+                    r1.salvarResistencia();
+                    break;
+                case 3:
+                    c1.receberFaixas();
+                    c1.mostrarCapacitancia();
+                    c1.salvarCapacitancia();
+                    break;
+                default:
+                    cout << "Opção inválida." << endl;
+            }
+        } catch (const char* e) {
+            cerr << e << endl;
+        }
     }
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.

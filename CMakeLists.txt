@@ -3,4 +3,10 @@ project(calculadora_eletrica)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(calculadora_eletrica src/main.cpp)
+add_executable(calculadora_eletrica src/main.cpp
+        src/componentes/capacitor/Capacitor.cpp
+        src/componentes/capacitor/Capacitor.h
+        src/componentes/resistor/Resistor.cpp
+        src/componentes/resistor/Resistor.h
+        src/componentes/TabelaGeral/TabelGeral.cpp
+        src/componentes/TabelaGeral/TabelGeral.h)

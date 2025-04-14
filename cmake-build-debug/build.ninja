@@ -55,6 +55,24 @@ build CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj: CXX_COMPILER__calcul
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
   OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src
 
+build CMakeFiles/calculadora_eletrica.dir/src/componentes/capacitor/Capacitor.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/componentes/capacitor/Capacitor.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\componentes\capacitor\Capacitor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\componentes\capacitor
+
+build CMakeFiles/calculadora_eletrica.dir/src/componentes/resistor/Resistor.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/componentes/resistor/Resistor.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\componentes\resistor\Resistor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\componentes\resistor
+
+build CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/componentes/TabelaGeral/TabelGeral.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\componentes\TabelaGeral\TabelGeral.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\componentes\TabelaGeral
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target calculadora_eletrica
@@ -63,7 +81,7 @@ build CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj: CXX_COMPILER__calcul
 #############################################
 # Link the executable calculadora_eletrica.exe
 
-build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj
+build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/capacitor/Capacitor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/resistor/Resistor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
