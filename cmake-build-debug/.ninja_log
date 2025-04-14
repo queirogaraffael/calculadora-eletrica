@@ -1,0 +1,6 @@
+# ninja log v6
+8	832	7622300276595196	CMakeFiles/calculadora_eletrica.dir/main.cpp.obj	b19faca6b571ad37
+837	1043	7622300284889087	calculadora_eletrica.exe	7b665a429b70a4a8
+7	1498	7663497125307939	build.ninja	808c6fb1ce88175
+87	1342	7663497129811254	CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj	1d1659192160c43e
+1345	2098	7663497142393168	calculadora_eletrica.exe	d3d482ebe6f9da34
