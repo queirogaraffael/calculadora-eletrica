@@ -1,8 +1,0 @@
-# ninja log v6
-8	832	7622300276595196	CMakeFiles/calculadora_eletrica.dir/main.cpp.obj	b19faca6b571ad37
-6	784	7663540991094031	CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj	1d1659192160c43e
-20	966	7663540991234056	CMakeFiles/calculadora_eletrica.dir/src/componentes/resistor/Resistor.cpp.obj	c3d4554535687eee
-1345	2098	7663497142393168	calculadora_eletrica.exe	d3d482ebe6f9da34
-7	1498	7663578635035816	build.ninja	808c6fb1ce88175
-32	157	7663540991354058	CMakeFiles/calculadora_eletrica.dir/src/componentes/potencia/Potencia.cpp.obj	1f280caafbf69b13
-13	820	7663540991164025	CMakeFiles/calculadora_eletrica.dir/src/componentes/capacitor/Capacitor.cpp.obj	ea85afb4e7e518d5

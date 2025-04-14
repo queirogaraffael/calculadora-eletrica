@@ -11,10 +11,9 @@ protected:
 
 public:
     ComponenteEletronico(std::string f1, std::string f2, std::string f3, std::string f4);
+
     virtual ~ComponenteEletronico() = default;
-
     virtual void calcularValor() = 0;
-
     void mostrarValor() const;
     void aplicarTolerancia();
 
@@ -23,7 +22,5 @@ public:
     static bool corValida(const std::string& cor);
     static int conversorCor(const std::string& cor);
 };
-
-
 
 #endif
