@@ -1,23 +1,14 @@
 #ifndef CAPACITOR_H
 #define CAPACITOR_H
 
-#include <string>
+#include "../ComponenteEletronico/ComponenteEletronico.h"
 
-using namespace std;
-
-class Capacitor {
-private:
-    string faixa4;
-    int tolerancia;
-    double valor_final;
-
+class Capacitor : public ComponenteEletronico {
 public:
-    Capacitor();
-    Capacitor(string f4, double valor);
-    void toleranciaC();
-    void mostrarCapacitancia();
-    void mostrarToleranciaC();
-    void salvarCapacitancia();
+    Capacitor(const std::string& f1, const std::string& f2, const std::string& f3, const std::string& f4)
+        : ComponenteEletronico(f1, f2, f3, f4) {}
+
+    void calcularValor() override;
 };
 
 #endif

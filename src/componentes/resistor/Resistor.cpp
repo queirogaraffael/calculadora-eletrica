@@ -1,31 +1,25 @@
-#include "Resistor.h"
+#ifndef RESISTOR_H
+#define RESISTOR_H
 
-Resistor::Resistor() {
-    faixa4 = "";
-    valor_final = 0;
-    tolerancia = 0;
-}
+#include "../ComponenteEletronico/ComponenteEletronico.h"
 
-Resistor::Resistor(std::string f4, double valor) {
-    faixa4 = f4;
-    valor_final = valor;
-    tolerancia = 0;
-}
+#include <stdexcept>
+#include <cmath>
 
-void Resistor::toleranciaR() {
-    static std::map<std::string, int> tolerancias = {
-        {"prata", 10}, {"ouro", 5}, {"marrom", 1},
-        {"vermelho", 2}, {"incolor", 20}};
+class Resistor : public ComponenteEletronico {
+public:
+    Resistor(const std::string& f1, const std::string& f2, const std::string& f3, const std::string& f4)
+        : ComponenteEletronico(f1, f2, f3, f4) {}
 
-    tolerancia = tolerancias[faixa4];
-}
+    void calcularValor() override {
+        int valor1 = ComponenteEletronico::conversorCor(faixa1);
+        int valor2 = ComponenteEletronico::conversorCor(faixa2);
+        int multiplicador = ComponenteEletronico::conversorCor(faixa3);
 
-void Resistor::mostrarResistencia() {
-    std::cout << "Resistência final: " << valor_final << " ohms" << std::endl;
-}
+        valor_final = (valor1 * 10 + valor2) * std::pow(10, multiplicador);
+        aplicarTolerancia();
+    }
 
-void Resistor::salvarResistencia() {
-    std::ofstream arquivoR("UltimasResistencias.txt", std::ios::app);
-    arquivoR << valor_final << " ohms" << std::endl;
-    arquivoR.close();
-}
+};
+
+#endif

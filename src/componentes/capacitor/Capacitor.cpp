@@ -1,33 +1,26 @@
-#include "Capacitor.h"
+#ifndef CAPACITOR_H
+#define CAPACITOR_H
 
-Capacitor::Capacitor() {
-    faixa4 = "";
-    valor_final = 0;
-    tolerancia = 0;
-}
+#include "../ComponenteEletronico/ComponenteEletronico.h"
 
-Capacitor::Capacitor(string f4, double valor) {
-    faixa4 = f4;
-    valor_final = valor;
-    tolerancia = 0;
-}
+#include <stdexcept>
+#include <cmath>
 
-void Capacitor::toleranciaC() {
-    if (faixa4 == "preto") tolerancia = 20;
-    else if (faixa4 == "branco") tolerancia = 10;
-}
+class Capacitor : public ComponenteEletronico {
+public:
+    Capacitor(const std::string& f1, const std::string& f2, const std::string& f3, const std::string& f4)
+        : ComponenteEletronico(f1, f2, f3, f4) {}
 
-void Capacitor::mostrarCapacitancia() {
-    cout << "Capacitância final: " << valor_final << " picofarads" << endl;
-}
+    void calcularValor() override {
+        int valor1 = ComponenteEletronico::conversorCor(faixa1);
+        int valor2 = ComponenteEletronico::conversorCor(faixa2);
+        int multiplicador = ComponenteEletronico::conversorCor(faixa3);
 
-void Capacitor::mostrarToleranciaC() {
-    toleranciaC();
-    cout << "Tolerância: ± " << tolerancia << " %" << endl;
-}
+        valor_final = (valor1 * 10 + valor2) * std::pow(10, multiplicador);
+        aplicarTolerancia();
+    }
 
-void Capacitor::salvarCapacitancia() {
-    ofstream arquivoC("UltimasCapacitancias.txt", ios::app);
-    arquivoC << valor_final << " picofarads" << endl;
-    arquivoC.close();
-}
+};
+
+#endif
+

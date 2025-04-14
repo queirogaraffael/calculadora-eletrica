@@ -1,23 +1,15 @@
 #ifndef RESISTOR_H
 #define RESISTOR_H
 
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <map>
+#include "../ComponenteEletronico/ComponenteEletronico.h"
 
-class Resistor {
-private:
-    std::string faixa4;
-    int tolerancia;
-    double valor_final;
-
+class Resistor : public ComponenteEletronico {
 public:
-    Resistor();
-    Resistor(std::string f4, double valor);
-    void toleranciaR();
-    void mostrarResistencia();
-    void salvarResistencia();
+    Resistor(const std::string& f1, const std::string& f2, const std::string& f3, const std::string& f4)
+            : ComponenteEletronico(f1, f2, f3, f4) {}
+
+    void calcularValor() override;
+
 };
 
 #endif
