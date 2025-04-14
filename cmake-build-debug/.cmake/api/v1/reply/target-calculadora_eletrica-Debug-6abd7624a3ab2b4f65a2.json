@@ -54,8 +54,9 @@
 			[
 				0,
 				1,
+				2,
 				3,
-				5
+				4
 			]
 		}
 	],
@@ -94,17 +95,18 @@
 			[
 				0,
 				1,
+				2,
 				3,
-				5
+				4
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2,
-				4,
-				6
+				5,
+				6,
+				7
 			]
 		}
 	],
@@ -124,19 +126,9 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/componentes/capacitor/Capacitor.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/componentes/resistor/Resistor.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/componentes/resistor/Resistor.h",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -146,7 +138,23 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/componentes/TabelaGeral/TabelGeral.h",
+			"compileGroupIndex" : 0,
+			"path" : "src/componentes/potencia/Potencia.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/constantes/OpcoesMenu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/views/MenuView.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/views/ManualView.h",
 			"sourceGroupIndex" : 1
 		}
 	],

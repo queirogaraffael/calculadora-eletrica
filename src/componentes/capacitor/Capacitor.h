@@ -1,8 +1,6 @@
 #ifndef CAPACITOR_H
 #define CAPACITOR_H
 
-#include <iostream>
-#include <fstream>
 #include <string>
 
 using namespace std;
@@ -14,7 +12,8 @@ private:
     double valor_final;
 
 public:
-    Capacitor(string f4, double valor); // Construtor
+    Capacitor();
+    Capacitor(string f4, double valor);
     void toleranciaC();
     void mostrarCapacitancia();
     void mostrarToleranciaC();

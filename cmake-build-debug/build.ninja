@@ -73,6 +73,12 @@ build CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
   OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\componentes\TabelaGeral
 
+build CMakeFiles/calculadora_eletrica.dir/src/componentes/potencia/Potencia.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/componentes/potencia/Potencia.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\componentes\potencia\Potencia.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\componentes\potencia
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target calculadora_eletrica
@@ -81,7 +87,7 @@ build CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral
 #############################################
 # Link the executable calculadora_eletrica.exe
 
-build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/capacitor/Capacitor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/resistor/Resistor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral.cpp.obj
+build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/capacitor/Capacitor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/resistor/Resistor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/TabelaGeral/TabelGeral.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/componentes/potencia/Potencia.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir

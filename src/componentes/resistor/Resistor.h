@@ -13,6 +13,7 @@ private:
     double valor_final;
 
 public:
+    Resistor();
     Resistor(std::string f4, double valor);
     void toleranciaR();
     void mostrarResistencia();

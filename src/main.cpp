@@ -1,48 +1,60 @@
-#include "classebase.h"
-#include "resistor.h"
-#include "componentes/Capacitor.h"
-#include "Potencia.h"
 #include <iostream>
-#include <string>
-#include <fstream>
 #include <locale>
+#include <stdexcept>
+#include <windows.h>
+#include "constantes/OpcoesMenu.h"
+#include "views/MenuView.h"
+#include "views/ManualView.h"
+
 using namespace std;
 
-// Função principal
 int main() {
-    setlocale(LC_ALL, "PORTUGUESE");
-    Resistor r1;
-    Capacitor c1;
+    SetConsoleOutputCP(CP_UTF8);
+    setlocale(LC_ALL, "pt_BR.utf8");
 
-    int opcao;
-    while (true) {
-        cout << "CALCULADORA ELÉTRICA BÁSICA" << endl;
-        cout << "1. Calcular resistência" << endl;
-        cout << "2. Últimas resistências" << endl;
-        cout << "3. Calcular capacitância" << endl;
-        cout << "4. Últimas capacitâncias" << endl;
-        cout << "7. Sair" << endl;
+    int opcao = 0;
+
+    while (opcao != SAIR) {
+        system("cls");
+        exibirMenu();
         cin >> opcao;
-
-        if (opcao == 7) break;
 
         try {
             switch (opcao) {
-                case 1:
-                    r1.receberFaixas();
-                    r1.mostrarResistencia();
-                    r1.salvarResistencia();
-                    break;
-                case 3:
-                    c1.receberFaixas();
-                    c1.mostrarCapacitancia();
-                    c1.salvarCapacitancia();
-                    break;
+                case CALCULAR_RESISTENCIA:
+                    // lógica para calcular resistência
+                        break;
+
+                case ULTIMAS_RESISTENCIAS:
+                    // lógica para mostrar resistências
+                        break;
+
+                case CALCULAR_CAPACITANCIA:
+                    // lógica para calcular capacitância
+                        break;
+
+                case ULTIMAS_CAPACITANCIAS:
+                    // lógica para mostrar capacitâncias
+                        break;
+
+                case POTENCIA_DISSIPADA:
+                    // lógica para potência
+                        break;
+
+                case MANUAL_USO:
+                    mostrarManual();
+                break;
+
+                case SAIR:
+                    cout << "Saindo do programa..." << endl;
+                break;
+
                 default:
-                    cout << "Opção inválida." << endl;
+                    throw invalid_argument("Opção inválida! Escolha uma opção válida.");
             }
-        } catch (const char* e) {
-            cerr << e << endl;
+        } catch (const invalid_argument& e) {
+            cerr << "Erro: " << e.what() << endl;
+            system("pause");
         }
     }
 

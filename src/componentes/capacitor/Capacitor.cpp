@@ -1,5 +1,11 @@
 #include "Capacitor.h"
 
+Capacitor::Capacitor() {
+    faixa4 = "";
+    valor_final = 0;
+    tolerancia = 0;
+}
+
 Capacitor::Capacitor(string f4, double valor) {
     faixa4 = f4;
     valor_final = valor;

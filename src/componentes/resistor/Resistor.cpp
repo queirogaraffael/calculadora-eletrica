@@ -1,5 +1,11 @@
 #include "Resistor.h"
 
+Resistor::Resistor() {
+    faixa4 = "";
+    valor_final = 0;
+    tolerancia = 0;
+}
+
 Resistor::Resistor(std::string f4, double valor) {
     faixa4 = f4;
     valor_final = valor;
