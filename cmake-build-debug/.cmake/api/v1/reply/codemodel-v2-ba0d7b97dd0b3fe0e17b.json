@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.20"
+						"string" : "3.30"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "calculadora_eletrica::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-calculadora_eletrica-Debug-4b3b35a8ce6c6f133b2f.json",
+					"jsonFile" : "target-calculadora_eletrica-Debug-28028386a177d10c29d1.json",
 					"name" : "calculadora_eletrica",
 					"projectIndex" : 0
 				}

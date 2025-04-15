@@ -2,12 +2,12 @@
 #include <locale>
 #include <stdexcept>
 #include <windows.h>
-#include "constantes/OpcoesMenu.h"
-#include "views/MenuView.h"
-#include "views/ManualView.h"
-#include "components/potencia/Potencia.h"
-#include "components/resistor/Resistor.h"
-#include "components/ComponenteEletronico/ComponenteEletronico.h"
+#include "src/constantes/OpcoesMenu.h"
+#include "src/views/MenuView.h"
+#include "src/views/ManualView.h"
+#include "src/components/potencia/Potencia.h"
+#include "src/components/resistor/Resistor.h"
+#include "src/components/ComponenteEletronico/ComponenteEletronico.h"
 
 using namespace std;
 
@@ -110,3 +110,7 @@ int main() {
     return 0;
 }
 
+// TIP See CLion help at <a
+// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
+//  Also, you can try interactive lessons for CLion by selecting
+//  'Help | Learn IDE Features' from the main menu.

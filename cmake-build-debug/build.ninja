@@ -49,40 +49,35 @@ cmake_ninja_workdir = C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-e
 
 build cmake_object_order_depends_target_calculadora_eletrica: phony || .
 
-build CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/main.cpp || cmake_object_order_depends_target_calculadora_eletrica
-  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\main.cpp.obj.d
+build CMakeFiles/calculadora_eletrica.dir/main.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/main.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/views -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/constantes
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
-  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src
-
-build CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia/Potencia.cpp || cmake_object_order_depends_target_calculadora_eletrica
-  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\potencia\Potencia.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/views -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/constantes
-  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
-  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\potencia
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir
 
 build CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor/Resistor.cpp || cmake_object_order_depends_target_calculadora_eletrica
   DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\resistor\Resistor.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/views -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/constantes
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
   OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\resistor
 
 build CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/capacitor/Capacitor.cpp || cmake_object_order_depends_target_calculadora_eletrica
   DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\capacitor\Capacitor.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/views -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/constantes
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
   OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\capacitor
 
-build CMakeFiles/calculadora_eletrica.dir/src/components/ComponenteEletronico/ComponenteEletronico.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico/ComponenteEletronico.cpp || cmake_object_order_depends_target_calculadora_eletrica
-  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\ComponenteEletronico\ComponenteEletronico.cpp.obj.d
+build CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia/Potencia.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\potencia\Potencia.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/potencia -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/resistor -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/ComponenteEletronico -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/views -IC:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/constantes
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
-  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\ComponenteEletronico
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\potencia
+
+build CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj: CXX_COMPILER__calculadora_eletrica_unscanned_Debug C$:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/src/components/componenteEletronico/ComponenteEletronico.cpp || cmake_object_order_depends_target_calculadora_eletrica
+  DEP_FILE = CMakeFiles\calculadora_eletrica.dir\src\components\componenteEletronico\ComponenteEletronico.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir
+  OBJECT_FILE_DIR = CMakeFiles\calculadora_eletrica.dir\src\components\componenteEletronico
 
 
 # =============================================================================
@@ -92,7 +87,7 @@ build CMakeFiles/calculadora_eletrica.dir/src/components/ComponenteEletronico/Co
 #############################################
 # Link the executable calculadora_eletrica.exe
 
-build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/ComponenteEletronico/ComponenteEletronico.cpp.obj
+build calculadora_eletrica.exe: CXX_EXECUTABLE_LINKER__calculadora_eletrica_Debug CMakeFiles/calculadora_eletrica.dir/main.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\calculadora_eletrica.dir

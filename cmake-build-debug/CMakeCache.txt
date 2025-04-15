@@ -113,7 +113,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/raffa/OneDrive/Documentos/Proje
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/calculadora_eletrica
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/untitled
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.3.1.1/bin/mingw/bin/ld.exe
@@ -250,6 +250,15 @@ calculadora_eletrica_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 calculadora_eletrica_SOURCE_DIR:STATIC=C:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica
+
+//Value Computed by CMake
+untitled_BINARY_DIR:STATIC=C:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica/cmake-build-debug
+
+//Value Computed by CMake
+untitled_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+untitled_SOURCE_DIR:STATIC=C:/Users/raffa/OneDrive/Documentos/Projetos/calculadora-eletrica
 
 
 ########################
