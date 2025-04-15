@@ -14,4 +14,7 @@ add_executable(calculadora_eletrica src/main.cpp
         src/components/componenteEletronico/ComponenteEletronico.h
         src/constantes/OpcoesMenu.h
         src/views/ManualView.h
-        src/views/MenuView.h)
+        src/views/MenuView.h
+        src/utils/CalculadoraEletronica.cpp
+        src/utils/CalculadoraEletronica.h
+)
