@@ -1,0 +1,2 @@
+Resistência calculada: 200.000000 Ohms
+Capacitância calculada: 0.000000 F

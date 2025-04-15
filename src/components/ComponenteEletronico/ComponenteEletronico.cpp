@@ -12,12 +12,8 @@ ComponenteEletronico::ComponenteEletronico(std::string f1, std::string f2, std::
     tolerancia = obterTolerancia(faixa4);
 }
 
-void ComponenteEletronico::mostrarValor() const {
-    std::cout << "Valor final: " << valor_final << " (com tolerância de " << tolerancia << "%)" << std::endl;
-}
-
-void ComponenteEletronico::aplicarTolerancia() {
-    valor_final *= (1 + tolerancia / 100.0);
+double ComponenteEletronico::getValor() const {
+    return valor_final;
 }
 
 double ComponenteEletronico::obterTolerancia(const std::string& cor) {

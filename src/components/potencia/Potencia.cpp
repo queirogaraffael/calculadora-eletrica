@@ -11,3 +11,7 @@ double Potencia::calcularPotencia() const {
 void Potencia::mostrarPotencia() const {
     std::cout << "Potência dissipada: " << calcularPotencia() << " W" << std::endl;
 }
+
+double Potencia::getPotencia() const {
+    return calcularPotencia();
+}

@@ -27,21 +27,17 @@ int main() {
                         CalculadoraEletronica::calcularResistencia();
                         break;
 
-                case ULTIMAS_RESISTENCIAS:
-                    // lógica para mostrar resistências
-                        break;
-
                 case CALCULAR_CAPACITANCIA:
-                    // lógica para calcular capacitância
-                        break;
-
-                case ULTIMAS_CAPACITANCIAS:
-                    // lógica para mostrar capacitâncias
+                    CalculadoraEletronica::calcularCapacitancia();
                         break;
 
                 case POTENCIA_DISSIPADA:
                     CalculadoraEletronica::calcularPotenciaDissipada();
                         break;
+
+                case RESULTADOS_SALVOS:
+                    CalculadoraEletronica::exibirResultadosSalvos();
+                break;
 
                 case MANUAL_USO:
                     mostrarManual();

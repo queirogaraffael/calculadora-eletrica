@@ -11,6 +11,7 @@ public:
 
     double calcularPotencia() const;
     void mostrarPotencia() const;
+    double getPotencia() const;
 };
 
 #endif

@@ -14,8 +14,9 @@ public:
 
     virtual ~ComponenteEletronico() = default;
     virtual void calcularValor() = 0;
-    void mostrarValor() const;
-    void aplicarTolerancia();
+    virtual void mostrarValor() const = 0;
+    virtual void aplicarTolerancia() const = 0;
+    [[nodiscard]] double getValor() const;
 
     static double obterTolerancia(const std::string& cor);
     static bool toleranciaValida(const std::string& cor);
