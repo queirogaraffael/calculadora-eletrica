@@ -2,12 +2,12 @@
 #include <locale>
 #include <stdexcept>
 #include <windows.h>
-#include "src/constantes/OpcoesMenu.h"
-#include "src/views/MenuView.h"
-#include "src/views/ManualView.h"
-#include "src/components/potencia/Potencia.h"
-#include "src/components/resistor/Resistor.h"
-#include "src/components/ComponenteEletronico/ComponenteEletronico.h"
+#include "constantes/OpcoesMenu.h"
+#include "views/MenuView.h"
+#include "views/ManualView.h"
+#include "components/potencia/Potencia.h"
+#include "components/resistor/Resistor.h"
+#include "components/ComponenteEletronico/ComponenteEletronico.h"
 
 using namespace std;
 

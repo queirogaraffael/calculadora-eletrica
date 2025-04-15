@@ -2,13 +2,15 @@
 38	1039	7663794029358009	CMakeFiles/untitled.dir/src/components/potencia/Potencia.cpp.obj	fde4a8bc04b9d2ee
 29	1097	7663794029269186	CMakeFiles/untitled.dir/src/components/capacitor/Capacitor.cpp.obj	250875810cd16752
 6	2472	7663794029025102	CMakeFiles/untitled.dir/main.cpp.obj	a6332466f6a56451
-8	536	7663794575702761	build.ninja	c216370507c2371f
+102	813	7663794649992691	CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj	9492d2365d695335
+8	536	7663795990571514	build.ninja	c216370507c2371f
 2472	2631	7663794053688000	untitled.exe	5350290c593516ff
 17	1028	7663794029145946	CMakeFiles/untitled.dir/src/components/resistor/Resistor.cpp.obj	d6911ab6187b04c6
 46	1171	7663794029433023	CMakeFiles/untitled.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj	2916bb5e2ed71a74
 91	762	7663794649882652	CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj	119b2020f8e5760a
-102	813	7663794649992691	CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj	9492d2365d695335
 78	1161	7663794649749806	CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj	193527191c3df135
 65	1173	7663794649634414	CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj	9d01f3d700655319
 50	7845	7663794649473846	CMakeFiles/calculadora_eletrica.dir/main.cpp.obj	b19faca6b571ad37
 7846	8183	7663794727438296	calculadora_eletrica.exe	d31fc7880c8eea69
+65	1505	7663796034148262	CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj	1d1659192160c43e
+1511	1657	7663796048600104	calculadora_eletrica.exe	266e334b6e1ea437
