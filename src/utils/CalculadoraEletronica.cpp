@@ -6,6 +6,8 @@
 #include "../components/potencia/Potencia.h"
 #include "../components/resistor/Resistor.h"
 #include "../components/capacitor/Capacitor.h"
+#include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -40,7 +42,7 @@ void CalculadoraEletronica::calcularPotenciaDissipada() {
         cout << "Deseja salvar este resultado? (s/n): ";
         cin >> opcao;
         if (opcao == 's' || opcao == 'S') {
-            salvarResultado("Potência dissipada: " + to_string(p.getPotencia()) + " W");
+            salvarResultado("Potência dissipada: " + formatarPotencia(p.getPotencia()) + " W");
         }
 
     } catch (const exception& e) {
@@ -49,6 +51,7 @@ void CalculadoraEletronica::calcularPotenciaDissipada() {
 
     system("pause");
 }
+
 
 void CalculadoraEletronica::calcularResistencia() {
     string faixa1, faixa2, faixa3, faixa4;
@@ -71,7 +74,7 @@ void CalculadoraEletronica::calcularResistencia() {
         cout << "Deseja salvar este resultado? (s/n): ";
         cin >> opcao;
         if (opcao == 's' || opcao == 'S') {
-            salvarResultado("Resistência calculada: " + to_string(resistor.getValor()) + " Ohms");
+            salvarResultado("Resistência calculada: " + resistor.valorComUnidade(resistor.getValor()));
         }
 
     } catch (const invalid_argument& e) {
@@ -80,6 +83,7 @@ void CalculadoraEletronica::calcularResistencia() {
 
     system("pause");
 }
+
 
 void CalculadoraEletronica::calcularCapacitancia() {
     string faixa1, faixa2, faixa3, faixa4;
@@ -102,8 +106,12 @@ void CalculadoraEletronica::calcularCapacitancia() {
         cout << "Deseja salvar este resultado? (s/n): ";
         cin >> opcao;
         if (opcao == 's' || opcao == 'S') {
-            salvarResultado("Capacitância calculada: " + to_string(capacitor.getValor()) + " F");
+            std::ostringstream stream;
+            stream << std::fixed << std::setprecision(9) << capacitor.getValor();
+            salvarResultado("Capacitância calculada: " + Capacitor::valorComUnidade(capacitor.getValor()));
+
         }
+
 
     } catch (const invalid_argument& e) {
         cerr << "Erro ao calcular capacitância: " << e.what() << endl;
@@ -129,4 +137,12 @@ void CalculadoraEletronica::exibirResultadosSalvos() {
 
     arquivo.close();
     system("pause");
+}
+
+std::string CalculadoraEletronica::formatarPotencia(double potencia) {
+    std::ostringstream oss;
+    oss << std::fixed << std::setprecision(2);
+    oss << potencia;
+
+    return oss.str();
 }

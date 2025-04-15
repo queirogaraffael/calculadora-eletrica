@@ -9,8 +9,8 @@ public:
     static void calcularResistencia();
     static void calcularCapacitancia();
     static void exibirResultadosSalvos();
+    static std::string formatarPotencia(double potencia);
 };
-
 void salvarResultado(const std::string& resultado);
 
 #endif

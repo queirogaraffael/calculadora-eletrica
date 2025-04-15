@@ -9,6 +9,10 @@ public:
     void calcularValor() override;
     void mostrarValor() const override;
     void aplicarTolerancia() const override;
+    static std::string valorComUnidade(double valor);
+private:
+    static void exibirValorComUnidade(double valor);
 };
+
 
 #endif

@@ -34,25 +34,18 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/capacitor/Capacitor.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/componenteEletronico/ComponenteEletronico.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/potencia/Potencia.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/components/resistor/Resistor.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/utils/CalculadoraEletronica.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/calculadora_eletrica.dir/src/utils/CalculadoraEletronica.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/calculadora_eletrica.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/calculadora_eletrica.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/resultados.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/capacitor/Capacitor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/capacitor/Capacitor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/capacitor/Capacitor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/capacitor/Capacitor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/potencia/Potencia.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/potencia/Potencia.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/potencia/Potencia.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/potencia/Potencia.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/resistor/Resistor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/resistor/Resistor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/resistor/Resistor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/resistor/Resistor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constantes/OpcoesMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/constantes/OpcoesMenu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/CalculadoraEletronica.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/CalculadoraEletronica.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/CalculadoraEletronica.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/CalculadoraEletronica.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ManualView.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ManualView.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/MenuView.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MenuView.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +124,7 @@
       <workItem from="1744675793229" duration="53000" />
       <workItem from="1744675864742" duration="16000" />
       <workItem from="1744676186846" duration="275000" />
-      <workItem from="1744715757867" duration="7380000" />
+      <workItem from="1744715757867" duration="10747000" />
     </task>
     <servers />
   </component>

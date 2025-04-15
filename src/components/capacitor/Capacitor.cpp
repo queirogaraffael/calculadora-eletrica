@@ -1,6 +1,7 @@
 #include "Capacitor.h"
 #include <cmath>
 #include <iostream>
+#include <iomanip>
 
 Capacitor::Capacitor(const std::string& f1, const std::string& f2, const std::string& f3, const std::string& f4)
     : ComponenteEletronico(f1, f2, f3, f4) {}
@@ -15,12 +16,11 @@ void Capacitor::calcularValor() {
     valor_final = valorEmPf * 1e-12;
 }
 
-
 void Capacitor::mostrarValor() const {
     std::cout << "Valor final: ";
     exibirValorComUnidade(valor_final);
 
-    std::cout << "Com tolerância de: " << tolerancia << "%" << std::endl;
+    std::cout << "Com tolerância de: " << std::fixed << std::setprecision(1) << tolerancia << "%" << std::endl;
 
     aplicarTolerancia();
 }
@@ -38,14 +38,28 @@ void Capacitor::aplicarTolerancia() const {
 
 void Capacitor::exibirValorComUnidade(double valor) {
     if (valor < 1e-12) {
-        std::cout << valor * 1e12 << " pF" << std::endl;
+        std::cout << std::fixed << std::setprecision(12) << valor * 1e12 << " pF" << std::endl;
     } else if (valor < 1e-9) {
-        std::cout << valor * 1e9 << " nF" << std::endl;
+        std::cout << std::fixed << std::setprecision(9) << valor * 1e9 << " nF" << std::endl;
     } else if (valor < 1e-6) {
-        std::cout << valor * 1e6 << " µF" << std::endl;
+        std::cout << std::fixed << std::setprecision(6) << valor * 1e6 << " µF" << std::endl;
     } else {
-        std::cout << valor << " F" << std::endl;
+        std::cout << std::fixed << std::setprecision(6) << valor << " F" << std::endl;
     }
 }
 
+std::string Capacitor::valorComUnidade(double valor) {
+    std::ostringstream oss;
 
+    if (valor < 1e-12) {
+        oss << std::fixed << std::setprecision(12) << valor * 1e12 << " pF";
+    } else if (valor < 1e-9) {
+        oss << std::fixed << std::setprecision(9) << valor * 1e9 << " nF";
+    } else if (valor < 1e-6) {
+        oss << std::fixed << std::setprecision(6) << valor * 1e6 << " µF";
+    } else {
+        oss << std::fixed << std::setprecision(6) << valor << " F";
+    }
+
+    return oss.str();
+}
